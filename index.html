@@ -746,7 +746,6 @@ section {
 <nav>
   <div class="nav-logo">EVOLVE365</div>
   <ul class="nav-links">
-    <li><a onclick="navScroll('glow')" data-t="nav-glow">Glow Up</a></li>
     <li><a onclick="navScroll('workout')" data-t="nav-workout">Workout</a></li>
     <li><a onclick="navScroll('nutrition')" data-t="nav-nutrition">Nutrition</a></li>
     <li><a onclick="navScroll('tracker')" data-t="nav-tracker">Tracker</a></li>
@@ -768,72 +767,6 @@ section {
   </div>
 </div>
 
-<div id="glow">
-  <section>
-    <div class="section-label" data-t="glow-label">Phase 01 — Appearance</div>
-    <div class="section-title" data-t="glow-title">Life<br>Routine</div>
-    <div class="divider"></div>
-
-    <div class="glow-grid">
-      <div class="glow-card" onclick="openCardModal('morning')">
-        <span class="card-icon">🌅</span>
-        <div class="card-title" data-t="morning-title">Morning Routine</div>
-        <div class="card-text" data-t="morning-text">Start every morning with face wash, toner, and SPF moisturizer. Sunscreen is non-negotiable — it prevents dullness and protects your natural skin tone.</div>
-        <div class="card-tip" data-t="morning-tip">💡 Use SPF 30–50 every morning even indoors. UV rays penetrate windows and still affect your skin.</div>
-      </div>
-
-    <div class="glow-card" onclick="openCardModal('night')">
-      <span class="card-icon">🌙</span>
-      <div class="card-title" data-t="night-title">Night Routine</div>
-      <div class="card-text" data-t="night-text">Double cleanse gently, use a soothing toner, then apply niacinamide serum and a lightweight moisturizer. For oily, acne-prone, and sensitive skin, use salicylic acid only 2–3x a week to avoid irritation while helping control excess oil and breakouts.</div>
-      <div class="card-tip" data-t="night-tip">Niacinamide + lightweight hydration helps calm redness, repair the skin barrier, and reduce excess oil naturally.</div>
-    </div>
-
-      <div class="glow-card" onclick="openCardModal('hydration')">
-        <span class="card-icon">💧</span>
-        <div class="card-title" data-t="hydration-title">Hydration</div>
-        <div class="card-text" data-t="hydration-text">Drink at least 2 liters of water daily. Hydrated skin = clearer, more even skin tone. Proper hydration also boosts your skin's natural elasticity.</div>
-        <div class="card-tip" data-t="hydration-tip">💡 Get a 600ml bottle. Refill 3x a day. Incredibly simple system.</div>
-      </div>
-
-      <div class="glow-card" onclick="openCardModal('grooming')">
-        <span class="card-icon">✂️</span>
-        <div class="card-title" data-t="grooming-title">Grooming</div>
-        <div class="card-text" data-t="grooming-text">Get a haircut every 3–4 weeks. Keep eyebrows clean (don't over-pluck — just tidy). Keep nails clean. These small things make a massive visual difference.</div>
-        <div class="card-tip" data-t="grooming-tip">💡 A clean haircut alone can change how others perceive your entire look.</div>
-      </div>
-
-      <div class="glow-card" onclick="openCardModal('style')">
-        <span class="card-icon">👕</span>
-        <div class="card-title" data-t="style-title">Style Upgrade</div>
-        <div class="card-text" data-t="style-text">Fit is everything. Even a plain white tee looks premium if it fits right. Dark colors (navy, black, charcoal) complement your skin tone beautifully.</div>
-        <div class="card-tip" data-t="style-tip">💡 Invest in 3–4 well-fitting basics over 10 oversized pieces.</div>
-      </div>
-
-      <div class="glow-card" onclick="openCardModal('posture')">
-        <span class="card-icon">🧘</span>
-        <div class="card-title" data-t="posture-title">Posture & Presence</div>
-        <div class="card-text" data-t="posture-text">Stand tall, pull shoulders back, chin parallel to the floor. Posture changes how you look AND feel. Practice 5 minutes of posture correction daily.</div>
-        <div class="card-tip" data-t="posture-tip">💡 Good posture alone can make you look 3–5kg lighter and 3cm taller.</div>
-      </div>
-    </div>
-
-    <div style="margin-top:80px;">
-      <div class="section-label" data-t="weekly-label">Daily Schedule</div>
-      <div class="section-title" style="font-size:36px;" data-t="weekly-title">Weekly Plan</div>
-      <div class="divider"></div>
-      <div class="routine-week">
-        <div class="week-day" onclick="openDayModal('mon')"><span class="day-label">MON</span><div class="day-tasks"><span class="task-tag" data-t="task-chest">Push</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag" data-t="task-water">Water 2L</span></div></div>
-        <div class="week-day" onclick="openDayModal('tue')"><span class="day-label">TUE</span><div class="day-tasks"><span class="task-tag" data-t="task-back">Pull</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag" data-t="task-posture">Posture Practice</span></div></div>
-        <div class="week-day" onclick="openDayModal('wed')"><span class="day-label">WED</span><div class="day-tasks"><span class="task-tag" data-t="task-legs">Legs</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag" data-t="task-hair">Hair Care</span></div></div>
-        <div class="week-day" onclick="openDayModal('thu')"><span class="day-label">THU</span><div class="day-tasks"><span class="task-tag rest" data-t="task-rest">Full Rest</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag" data-t="task-water">Water 2L</span></div></div>
-        <div class="week-day" onclick="openDayModal('fri')"><span class="day-label">FRI</span><div class="day-tasks"><span class="task-tag" data-t="task-fullbody">Push</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag" data-t="task-style-check">Style Check</span></div></div>
-        <div class="week-day" onclick="openDayModal('sat')"><span class="day-label">SAT</span><div class="day-tasks"><span class="task-tag" data-t="task-cardio">Pull</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag" data-t="task-style-plan">Style Planning</span></div></div>
-        <div class="week-day" onclick="openDayModal('sun')"><span class="day-label">SUN</span><div class="day-tasks"><span class="task-tag" data-t="task-cardio">Cardio</span><span class="task-tag" data-t="task-skincare">Skincare AM/PM</span><span class="task-tag rest" data-t="task-reflect">Reflect & Plan</span></div></div>
-      </div>
-    </div>
-  </section>
-</div>
 
 <div class="workout-section" id="workout">
   <div class="workout-inner">
@@ -841,107 +774,54 @@ section {
     <div class="section-title" data-t="workout-title">Workout</div>
     <div class="divider"></div>
     <div class="workout-grid">
-      <!-- PPL x Arnold Split dengan 2 rest days -->
-      <div class="workout-card">
-        <div class="workout-day-num">01</div>
-        <div class="workout-day-name">Monday</div>
-        <div class="workout-focus">Push (Chest/Shoulders/Triceps)</div>
-        <ul class="exercise-list">
-          <li><span class="exercise-name">Bench Press</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Incline Dumbbell Press</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Dumbbell Lateral Raise</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Cable Fly</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Dips</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Overhead Tricep Extension</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Push Up</span><span class="exercise-sets">3 × 6-8</span></li>
-        </ul>
-      </div>
-      <div class="workout-card">
-        <div class="workout-day-num">02</div>
-        <div class="workout-day-name">Tuesday</div>
-        <div class="workout-focus">Pull (Back/Biceps)</div>
-        <ul class="exercise-list">
-          <li><span class="exercise-name">Pull Ups</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Lat Pulldown</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">One Arm Dumbbell Row</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Face Pull</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Hammer Curl</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">prechs curl Curl</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Dumbbell Curl</span><span class="exercise-sets">3 × 6-8</span></li>
-        </ul>
-      </div>
-      <div class="workout-card">
-        <div class="workout-day-num">03</div>
-        <div class="workout-day-name">Wednesday</div>
-        <div class="workout-focus">Legs</div>
-        <ul class="exercise-list">
-          <li><span class="exercise-name">Goblet Squat</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Glute Bridge</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Walking Lunges</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Wall Sit</span><span class="exercise-sets">3 × 45s</span></li>
-          <li><span class="exercise-name">Standing Calf Raise</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Plank</span><span class="exercise-sets">3 × 60s</span></li>
-          <li><span class="exercise-name">Russian Twist</span><span class="exercise-sets">2 × 6-8</span></li>
-        </ul>
-      </div>
-      <div class="workout-card">
-        <div class="workout-day-num">04</div>
-        <div class="workout-day-name">Thursday</div>
-        <div class="workout-focus">Full Rest</div>
-        <ul class="exercise-list">
-          <li style="justify-content:center; border-bottom:none; color:var(--muted); padding:20px 0;">💤 Rest & Recovery</li>
-          <li style="justify-content:center; border-bottom:none; color:var(--muted); font-size:12px;">Sleep 7–9 hours · Stretch · Hydrate</li>
-        </ul>
-      </div>
-      <div class="workout-card">
-        <div class="workout-day-num">05</div>
-        <div class="workout-day-name">Friday</div>
-        <div class="workout-focus">Push (Chest/Shoulders/Triceps)</div>
-        <ul class="exercise-list">
-          <li><span class="exercise-name">Tricep Pushdown</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">push up</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">cable fly</span><span class="exercise-sets">2 × 10</span></li>
-          <li><span class="exercise-name">Lateral Raise</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">bench press</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">incline dumblle press</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">shoulder Press</span><span class="exercise-sets">3 × 6-8</span></li>
-        </ul>
-      </div>
-      <div class="workout-card">
-        <div class="workout-day-num">06</div>
-        <div class="workout-day-name">Saturday</div>
-        <div class="workout-focus">Pull (Back/Biceps)</div>
-        <ul class="exercise-list">
-          <li><span class="exercise-name">lat pulldown</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Pull Up</span><span class="exercise-sets">4 × 6-8</span></li>
-          <li><span class="exercise-name">Chest Supported Row</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Face Pull</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Preacher Curl</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Hammer Curl</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Dumbbell Row</span><span class="exercise-sets">3 × 6-8</span></li>
-        </ul>
-      </div>
-      <div class="workout-card">
-        <div class="workout-day-num">07</div>
-        <div class="workout-day-name">Sunday</div>
-        <div class="workout-focus">Cardio</div>
-        <ul class="exercise-list">
-          <li><span class="exercise-name">Jogging / Running</span><span class="exercise-sets">20–30 min</span></li>
-          <li><span class="exercise-name">Jump Rope</span><span class="exercise-sets">3 × 1 min</span></li>
-          <li><span class="exercise-name">Mountain Climbers</span><span class="exercise-sets">3 × 30s</span></li>
-          <li><span class="exercise-name">Burpees</span><span class="exercise-sets">3 × 6-8</span></li>
-          <li><span class="exercise-name">Cool Down Stretch</span><span class="exercise-sets">10 min</span></li>
-        </ul>
-      </div>
-    </div>
-    <div style="margin-top:32px; padding:24px; border:1px solid rgba(201,169,110,0.15); background:rgba(201,169,110,0.03);">
-      <div style="font-family:'Bebas Neue',sans-serif; font-size:16px; letter-spacing:3px; color:var(--gold); margin-bottom:12px;" data-t="rest-title">
-        ⚡ THURSDAY — FULL REST
-      </div>
-      <p style="font-size:13px; color:var(--muted); line-height:1.7;" data-t="rest-desc">
-        Sleep 7–9 hours. Muscles grow during rest, not during training. Walk, stretch, eat clean, drink water. Never skip rest day — it's part of the program.
-      </p>
-    </div>
+<div class="workout-grid">
+
+  <!-- DAY A -->
+  <div class="workout-card">
+    <div class="workout-day-num">A</div>
+    <div class="workout-day-name">Monday</div>
+    <div class="workout-focus">Chest + Lats + Legs</div>
+
+    <ul class="exercise-list">
+      <li><span class="exercise-name">Goblet Squat</span><span class="exercise-sets">4 × 8–12</span></li>
+      <li><span class="exercise-name">Dumbbell Wide Row</span><span class="exercise-sets">4 × 8–12</span></li>
+      <li><span class="exercise-name">Incline Dumbbell Press</span><span class="exercise-sets">3 × 8–12</span></li>
+      <li><span class="exercise-name">Dumbbell Lateral Raise</span><span class="exercise-sets">3 × 12–15</span></li>
+      <li><span class="exercise-name">Tricep Overhead Extension</span><span class="exercise-sets">3 × 10–12</span></li>
+    </ul>
+  </div>
+
+  <!-- DAY B -->
+  <div class="workout-card">
+    <div class="workout-day-num">B</div>
+    <div class="workout-day-name">Wednesday</div>
+    <div class="workout-focus">Back + Shoulders + Arms</div>
+
+    <ul class="exercise-list">
+      <li><span class="exercise-name">Romanian Deadlift (RDL)</span><span class="exercise-sets">4 × 8–12</span></li>
+      <li><span class="exercise-name">Dumbbell Pullover</span><span class="exercise-sets">3 × 10–12</span></li>
+      <li><span class="exercise-name">Underhand Dumbbell Row</span><span class="exercise-sets">4 × 8–12</span></li>
+      <li><span class="exercise-name">Dumbbell Shoulder Press</span><span class="exercise-sets">3 × 8–12</span></li>
+      <li><span class="exercise-name">Dumbbell Bicep Curl</span><span class="exercise-sets">3 × 10–12</span></li>
+    </ul>
+  </div>
+
+  <!-- DAY C -->
+  <div class="workout-card">
+    <div class="workout-day-num">C</div>
+    <div class="workout-day-name">Friday</div>
+    <div class="workout-focus">Full Upper + Glutes Focus</div>
+
+    <ul class="exercise-list">
+      <li><span class="exercise-name">Dumbbell Sumo Squat</span><span class="exercise-sets">4 × 10–12</span></li>
+      <li><span class="exercise-name">Dumbbell Incline Row</span><span class="exercise-sets">4 × 8–12</span></li>
+      <li><span class="exercise-name">Dumbbell Floor Press</span><span class="exercise-sets">3 × 8–12</span></li>
+      <li><span class="exercise-name">Rear Delt Fly</span><span class="exercise-sets">3 × 12–15</span></li>
+      <li><span class="exercise-name">Hammer Curl</span><span class="exercise-sets">3 × 10–12</span></li>
+    </ul>
+  </div>
+
+</div>
 
 <div id="nutrition">
   <section class="nutrition-section">
